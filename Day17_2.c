@@ -15,7 +15,7 @@ Not prime
 */
 #include <stdio.h>
 
-int main(void)
+int main()
 {
 	int number;
 	int is_prime = 1;
