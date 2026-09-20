@@ -1,5 +1,5 @@
 /*
-Q74: Find the sum of each column of a matrix and store it in an array.
+Q74: Find the transpose of a matrix.
 
 Sample Test Cases:
 Input 1:
@@ -7,7 +7,9 @@ Input 1:
 1 2 3
 4 5 6
 Output 1:
-5 7 9
+1 4
+2 5
+3 6
 */
 
 #include <stdio.h>
@@ -24,18 +26,12 @@ int main() {
         }
     }
     
-    int colSum[cols];
     for (int j = 0; j < cols; j++) {
-        colSum[j] = 0;
         for (int i = 0; i < rows; i++) {
-            colSum[j] += matrix[i][j];
+            printf("%d ", matrix[i][j]);
         }
+        printf("\n");
     }
-    
-    for (int j = 0; j < cols; j++) {
-        printf("%d ", colSum[j]);
-    }
-    printf("\n");
     
     return 0;
 }
